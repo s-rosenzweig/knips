@@ -1,2 +1,0 @@
-# knips
-Knïps App

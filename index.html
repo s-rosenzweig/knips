@@ -9,336 +9,224 @@
   <body>
     <div class="h-screen bg-white text-[#0D0E0E] flex flex-col relative overflow-hidden font-sans">
 
-      <header class="h-[74px] shrink-0 bg-white border-b-2 border-black flex items-center justify-between px-6 py-4 md:px-8 select-none shadow-[0px_2px_8px_rgba(0,0,0,0.04)] z-40">
-        <div class="flex items-center gap-3 cursor-pointer" id="brand-header-trigger">
-          <div class="flex-shrink-0 animate-pulse-slow">
-            <svg width="38" height="38" viewBox="0 0 500 500" class="select-none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="240" y="30" width="110" height="35" rx="10" fill="#0D0E0E" />
-              <path d="M 50 150 L 180 150 L 180 380 L 155 380 C 155 300, 140 280, 50 280 C 40 280, 30 270, 30 250 L 30 170 C 30 155, 40 150, 50 150 Z" fill="#0D0E0E" stroke="#0D0E0E" stroke-width="4" stroke-linejoin="round" />
-              <rect x="40" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
-              <rect x="75" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
-              <rect x="110" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
-              <rect x="145" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
-              <path d="M 436 185 C 460 190, 480 175, 482 155 C 483 145, 477 140, 472 145 C 468 149, 471 155, 468 160 C 465 164, 453 168, 436 166 Z" fill="#0D0E0E" />
-              <circle cx="478" cy="144" r="10" fill="#0D0E0E" />
-              <rect x="180" y="60" width="260" height="410" rx="65" fill="#0D0E0E" />
-              <g clip-path="url(#canister-clip)">
-                <clipPath id="canister-clip"><rect x="192" y="72" width="236" height="386" rx="53" /></clipPath>
-                <rect x="192" y="72" width="55" height="386" fill="#F4AC24" />
-                <rect x="247" y="72" width="40" height="386" fill="#88C9A1" />
-                <rect x="287" y="72" width="7" height="386" fill="#0D0E0E" />
-                <rect x="294" y="72" width="38" height="386" fill="#135D52" />
-                <rect x="332" y="72" width="48" height="386" fill="#1FA68A" />
-                <rect x="380" y="72" width="50" height="386" fill="#E55B2B" />
-                <circle cx="308" cy="254" r="82" fill="#0D0E0E" />
-                <rect x="281" y="180" width="35" height="148" rx="12" fill="#FFFFFF" />
-                <path d="M 314 246 L 384 182 C 388 178, 394 183, 390 188 L 332 258 Z" fill="#FFFFFF" />
-                <path d="M 314 256 L 383 325 C 388 330, 394 324, 389 319 L 332 250 Z" fill="#FFFFFF" />
-                <circle cx="355" cy="270" r="11" fill="#FFFFFF" />
-                <circle cx="383" cy="270" r="11" fill="#FFFFFF" />
-              </g>
-              <rect x="184" y="64" width="252" height="402" rx="61" fill="none" stroke="#0D0E0E" stroke-width="8" />
-            </svg>
-          </div>
-          <div class="flex items-baseline gap-2">
-            <h1 class="text-lg md:text-xl font-black tracking-tighter">kn<span class="text-[#E55B2B]">ï</span>ps</h1>
-            <span class="text-[10px] font-mono opacity-65 border border-black px-1.5 py-0.2 bg-neutral-50 rounded-sm">v1.1.4</span>
+      <header class="h-[74px] shrink-0 bg-white border-b-2 border-black flex items-center justify-between px-4 py-4 md:px-8 select-none shadow-[0px_2px_8px_rgba(0,0,0,0.04)] z-40">
+        <div class="flex items-center gap-3 min-w-0">
+          <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
+            <span class="menu-toggle-bar"></span>
+            <span class="menu-toggle-bar"></span>
+            <span class="menu-toggle-bar"></span>
+          </button>
+          <div class="flex items-center gap-3 cursor-pointer min-w-0" id="brand-header-trigger">
+            <div class="flex-shrink-0 animate-pulse-slow">
+              <svg width="38" height="38" viewBox="0 0 500 500" class="select-none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <rect x="240" y="30" width="110" height="35" rx="10" fill="#0D0E0E" />
+                <path d="M 50 150 L 180 150 L 180 380 L 155 380 C 155 300, 140 280, 50 280 C 40 280, 30 270, 30 250 L 30 170 C 30 155, 40 150, 50 150 Z" fill="#0D0E0E" stroke="#0D0E0E" stroke-width="4" stroke-linejoin="round" />
+                <rect x="40" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
+                <rect x="75" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
+                <rect x="110" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
+                <rect x="145" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
+                <path d="M 436 185 C 460 190, 480 175, 482 155 C 483 145, 477 140, 472 145 C 468 149, 471 155, 468 160 C 465 164, 453 168, 436 166 Z" fill="#0D0E0E" />
+                <circle cx="478" cy="144" r="10" fill="#0D0E0E" />
+                <rect x="180" y="60" width="260" height="410" rx="65" fill="#0D0E0E" />
+                <g clip-path="url(#canister-clip)">
+                  <clipPath id="canister-clip"><rect x="192" y="72" width="236" height="386" rx="53" /></clipPath>
+                  <rect x="192" y="72" width="55" height="386" fill="#F4AC24" />
+                  <rect x="247" y="72" width="40" height="386" fill="#88C9A1" />
+                  <rect x="287" y="72" width="7" height="386" fill="#0D0E0E" />
+                  <rect x="294" y="72" width="38" height="386" fill="#135D52" />
+                  <rect x="332" y="72" width="48" height="386" fill="#1FA68A" />
+                  <rect x="380" y="72" width="50" height="386" fill="#E55B2B" />
+                  <circle cx="308" cy="254" r="82" fill="#0D0E0E" />
+                  <rect x="281" y="180" width="35" height="148" rx="12" fill="#FFFFFF" />
+                  <path d="M 314 246 L 384 182 C 388 178, 394 183, 390 188 L 332 258 Z" fill="#FFFFFF" />
+                  <path d="M 314 256 L 383 325 C 388 330, 394 324, 389 319 L 332 250 Z" fill="#FFFFFF" />
+                  <circle cx="355" cy="270" r="11" fill="#FFFFFF" />
+                  <circle cx="383" cy="270" r="11" fill="#FFFFFF" />
+                </g>
+                <rect x="184" y="64" width="252" height="402" rx="61" fill="none" stroke="#0D0E0E" stroke-width="8" />
+              </svg>
+            </div>
+            <h1 class="text-lg md:text-xl font-black tracking-tighter">knïps</h1>
           </div>
         </div>
-        <a href="https://apps.apple.com/app/knips/id000000000" target="_blank" rel="noreferrer" class="inline-flex items-center gap-1.5 font-mono text-[9px] uppercase font-bold border border-black py-1 px-2.5 bg-neutral-50 shadow-[1.5px_1.5px_0px_0px_#0D0E0E] hover:bg-[#F4AC24] transition-colors">
-          <span class="w-1.5 h-1.5 bg-[#1FA68A] rounded-full"></span>
+        <span class="inline-flex items-center gap-1.5 font-mono text-[9px] uppercase font-bold border border-black py-1 px-2.5 bg-neutral-50 opacity-50 cursor-not-allowed select-none" aria-disabled="true" title="Demnächst">
+          <span class="w-1.5 h-1.5 bg-neutral-400 rounded-full"></span>
           <span>App Store</span>
-        </a>
+        </span>
       </header>
 
-      <div class="flex-1 flex flex-col md:flex-row min-h-0 overflow-y-auto md:overflow-hidden">
+      <div class="flex-1 flex flex-col md:flex-row min-h-0 overflow-y-auto md:overflow-hidden relative">
+        <div id="nav-overlay" class="nav-overlay" hidden></div>
 
-        <aside class="w-full md:w-72 border-r-2 border-black p-6 md:p-8 flex flex-col justify-between gap-8 bg-neutral-50 shrink-0 select-none md:h-full md:overflow-hidden">
-          <div class="space-y-6">
-            <div class="space-y-3">
-              <p class="text-[10px] font-bold text-[#135D52] font-mono uppercase tracking-widest leading-none">NAVIGATION</p>
-              <h2 class="text-xl md:text-2xl font-black tracking-tight leading-none text-[#0D0E0E] underline decoration-[#F4AC24] decoration-2">knïps</h2>
-              <p class="text-xs text-neutral-600 leading-relaxed font-mono">Analoge Fotografie, digital organisiert.</p>
-            </div>
-            <div class="space-y-2 border-t border-dashed border-neutral-300 pt-6">
-              <span class="text-[9px] font-mono font-bold text-neutral-400 uppercase tracking-widest block mb-3">Abschnitte</span>
-              <nav class="flex flex-col gap-1.5">
-                <button type="button" class="nav-btn active text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="allgemein">
-                  <span class="font-bold">ALLGEMEIN</span><span class="text-[9px] tracking-normal opacity-50 font-mono">01</span>
-                </button>
-                <button type="button" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="beispiele">
-                  <span class="font-bold">BEISPIELE</span><span class="text-[9px] tracking-normal opacity-50 font-mono">02</span>
-                </button>
-                <button type="button" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="datenschutz">
-                  <span class="font-bold">DATENSCHUTZ</span><span class="text-[9px] tracking-normal opacity-50 font-mono">03</span>
-                </button>
-                <button type="button" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="ueber">
-                  <span class="font-bold">ÜBER</span><span class="text-[9px] tracking-normal opacity-50 font-mono">04</span>
-                </button>
-              </nav>
-            </div>
-          </div>
-
-          <div class="space-y-4 pt-6 border-t border-neutral-200">
-            <div>
-              <div class="text-[9px] font-mono font-bold text-neutral-400 uppercase tracking-widest mb-1.5 text-center">Markenfarben</div>
-              <div class="flex h-3 w-full border border-black overflow-hidden shadow-[2px_2px_0px_0px_#0D0E0E]">
-                <span class="flex-1 bg-[#F4AC24]"></span>
-                <span class="flex-1 bg-[#88C9A1]"></span>
-                <span class="w-1.5 bg-[#0D0E0E]"></span>
-                <span class="flex-1 bg-[#135D52]"></span>
-                <span class="flex-1 bg-[#1FA68A]"></span>
-                <span class="flex-1 bg-[#E55B2B]"></span>
-              </div>
-            </div>
-            <div class="border border-black p-4 space-y-2 bg-white shadow-[2px_2px_0px_0px_rgba(0,0,0,0.06)] font-mono text-[10px]">
-              <div class="badge">KONTAKT</div>
-              <div class="text-neutral-600 space-y-1.5 leading-tight">
-                <p>
-                  <span class="font-bold text-neutral-400 block text-[8px] tracking-wide uppercase">Name</span>
-                  <span class="font-bold text-[#0D0E0E]">Sebastian Rosenzweig</span>
-                </p>
-                <p>
-                  <span class="font-bold text-neutral-400 block text-[8px] tracking-wide uppercase">E-Mail</span>
-                  <a href="mailto:knips.app@outlook.com" class="underline text-[#135D52] font-semibold break-all">knips.app@outlook.com</a>
-                </p>
-              </div>
-            </div>
-          </div>
+        <aside id="site-nav" class="site-aside w-full md:w-72 border-r-2 border-black p-6 md:p-8 flex flex-col gap-8 bg-neutral-50 shrink-0 select-none md:h-full md:overflow-hidden">
+          <nav class="flex flex-col gap-1.5">
+            <a href="#allgemein" class="nav-btn active text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="allgemein">
+              <span class="font-bold">Allgemein</span><span class="text-[9px] tracking-normal opacity-50 font-mono">01</span>
+            </a>
+            <a href="#beispiele" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="beispiele">
+              <span class="font-bold">Beispiele</span><span class="text-[9px] tracking-normal opacity-50 font-mono">02</span>
+            </a>
+            <a href="#datenschutz" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="datenschutz">
+              <span class="font-bold">Datenschutz</span><span class="text-[9px] tracking-normal opacity-50 font-mono">03</span>
+            </a>
+            <a href="#ueber" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="ueber">
+              <span class="font-bold">Über</span><span class="text-[9px] tracking-normal opacity-50 font-mono">04</span>
+            </a>
+            <a href="#kontakt" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="kontakt">
+              <span class="font-bold">Kontakt / Impressum</span><span class="text-[9px] tracking-normal opacity-50 font-mono">05</span>
+            </a>
+          </nav>
         </aside>
 
         <main id="main-scroll-container" class="flex-1 p-6 md:p-10 pixel-grid flex flex-col justify-between space-y-16 overflow-y-auto h-full bg-white">
           <div class="max-w-4xl mx-auto w-full space-y-24">
 
             <section id="allgemein" class="scroll-mt-28 space-y-6 pt-4">
-              <div class="flex items-center justify-between border-b-2 border-black pb-2.5">
+              <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-[#1FA68A] inline-block border border-black"></span>
-                  01 // ALLGEMEIN
+                  01 Allgemein
                 </h3>
-                <span class="font-mono text-[10px] text-neutral-400">KNOTEN_01</span>
               </div>
               <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
                 <div class="md:col-span-7 space-y-6">
-                  <h2 class="text-4xl sm:text-5xl font-black leading-[0.95] tracking-tight text-[#0D0E0E] uppercase font-sans">
-                    Analoge Momente.<br />
-                    <span class="text-[#E55B2B] italic font-serif">Bewusst</span> festgehalten.
+                  <h2 class="text-4xl sm:text-5xl font-black leading-[0.95] tracking-tight text-[#0D0E0E] font-sans">
+                    Weniger ist mehr.
                   </h2>
                   <p class="text-sm font-mono text-neutral-600 leading-relaxed">
-                    knïps ist eine Kamera-App im analogen Stil. Nimm deine Momente bewusst auf — wie mit einer Filmrolle.
+                    knïps bringt dir die Nostalgie analoger Fotografie auf dein Smartphone: Filmrolle einlegen, fotografieren, drucken. Fast wie früher.
                   </p>
                   <div class="flex flex-wrap gap-3">
-                    <a href="https://apps.apple.com/app/knips/id000000000" target="_blank" rel="noreferrer" class="store-link btn-link bg-black text-white px-5 py-2.5 font-mono text-xs font-bold hover:bg-[#E55B2B] transition-all border-2 border-black active:translate-x-[1px] active:translate-y-[1px] shadow-[3.5px_3.5px_0px_0px_#1FA68A]">APP STORE</a>
-                    <button type="button" data-scroll="beispiele" class="bg-white text-black px-5 py-2.5 font-mono text-xs font-bold hover:bg-neutral-50 transition-all cursor-pointer border-2 border-black active:translate-x-[1px] active:translate-y-[1px] shadow-[3.5px_3.5px_0px_0px_#F4AC24]">BEISPIELE</button>
+                    <span class="bg-black text-white px-5 py-2.5 font-mono text-xs font-bold border-2 border-black opacity-50 cursor-not-allowed select-none" aria-disabled="true" title="Demnächst">App Store</span>
+                    <a href="#beispiele" data-scroll="beispiele" class="btn-link bg-white text-black px-5 py-2.5 font-mono text-xs font-bold hover:bg-neutral-50 transition-all cursor-pointer border-2 border-black active:translate-x-[1px] active:translate-y-[1px] shadow-[3.5px_3.5px_0px_0px_#F4AC24]">Beispiele</a>
                   </div>
                 </div>
                 <div class="md:col-span-5">
                   <div class="border-2 border-black p-2 bg-white shadow-[4px_4px_0px_0px_#E55B2B]">
-                    <img src="https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&amp;fit=crop&amp;w=650&amp;q=80" alt="Analoge Filmfotografie" class="w-full aspect-[4/3] object-cover border border-black grayscale-[20%]" referrerpolicy="no-referrer" />
-                    <div class="mt-2 flex justify-between items-center font-mono text-[9px] text-neutral-400">
-                      <span>FIGUR 01.01</span><span>ANALOG_STIL</span>
-                    </div>
+                    <div class="w-full aspect-[4/3] border border-black bg-neutral-100" aria-hidden="true"></div>
                   </div>
                 </div>
               </div>
             </section>
 
             <section id="beispiele" class="scroll-mt-28 space-y-6 pt-4">
-              <div class="flex items-center justify-between border-b-2 border-black pb-2.5">
+              <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-[#E55B2B] inline-block border border-black"></span>
-                  02 // BEISPIELE
+                  02 Beispiele
                 </h3>
-                <span class="font-mono text-[10px] text-neutral-400">KNOTEN_02</span>
               </div>
               <div class="space-y-4">
                 <p class="text-xs font-mono text-neutral-500 max-w-xl">Platzhalter — echte Screenshots folgen.</p>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-2">
                   <div class="space-y-3">
-                    <div class="border-2 border-black bg-neutral-900 overflow-hidden shadow-[4px_4px_0px_0px_#135D52]">
-                      <div class="bg-neutral-800 border-b border-black font-mono text-[10px] text-neutral-400 px-3 py-1.5 flex justify-between items-center">
-                        <span class="flex items-center gap-1.5">
-                          <span class="w-2.5 h-2.5 rounded-full bg-red-400 inline-block"></span>
-                          <span class="w-2.5 h-2.5 rounded-full bg-yellow-400 inline-block"></span>
-                          <span class="w-2.5 h-2.5 rounded-full bg-green-400 inline-block"></span>
-                          <span class="ml-1 text-white font-bold text-[9px]">SCREEN_01 // KAMERA</span>
-                        </span>
-                        <svg class="w-3.5 h-3.5 text-white" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
-                      </div>
-                      <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&amp;fit=crop&amp;w=850&amp;q=80" alt="Kamera-Ansicht Platzhalter" class="w-full aspect-[16/10] object-cover border-b border-black select-none" referrerpolicy="no-referrer" />
+                    <div class="border-2 border-black bg-neutral-100 overflow-hidden shadow-[4px_4px_0px_0px_#135D52]">
+                      <div class="w-full aspect-[16/10] select-none" aria-hidden="true"></div>
                     </div>
-                    <div class="flex justify-between font-mono text-[10px] text-neutral-500">
-                      <span class="font-bold text-[#0D0E0E]">01 • Sucher</span><span>PLATZHALTER</span>
-                    </div>
+                    <p class="font-mono text-[10px] font-bold text-[#0D0E0E]">01 Sucher</p>
                   </div>
                   <div class="space-y-3">
-                    <div class="border-2 border-black bg-neutral-900 overflow-hidden shadow-[4px_4px_0px_0px_#F4AC24]">
-                      <div class="bg-neutral-800 border-b border-black font-mono text-[10px] text-neutral-400 px-3 py-1.5 flex justify-between items-center">
-                        <span class="flex items-center gap-1.5">
-                          <span class="w-2.5 h-2.5 rounded-full bg-red-400 inline-block"></span>
-                          <span class="w-2.5 h-2.5 rounded-full bg-yellow-400 inline-block"></span>
-                          <span class="w-2.5 h-2.5 rounded-full bg-green-400 inline-block"></span>
-                          <span class="ml-1 text-white font-bold text-[9px]">SCREEN_02 // FILMBOX</span>
-                        </span>
-                        <svg class="w-3.5 h-3.5 text-white" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="14" x="2" y="3" rx="2"/><line x1="8" x2="16" y1="21" y2="21"/><line x1="12" x2="12" y1="17" y2="21"/></svg>
-                      </div>
-                      <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?auto=format&amp;fit=crop&amp;w=850&amp;q=80" alt="Filmrolle Platzhalter" class="w-full aspect-[16/10] object-cover border-b border-black select-none" referrerpolicy="no-referrer" />
+                    <div class="border-2 border-black bg-neutral-100 overflow-hidden shadow-[4px_4px_0px_0px_#F4AC24]">
+                      <div class="w-full aspect-[16/10] select-none" aria-hidden="true"></div>
                     </div>
-                    <div class="flex justify-between font-mono text-[10px] text-neutral-500">
-                      <span class="font-bold text-[#0D0E0E]">02 • Filmrolle</span><span>PLATZHALTER</span>
-                    </div>
+                    <p class="font-mono text-[10px] font-bold text-[#0D0E0E]">02 Filmrolle</p>
                   </div>
                 </div>
               </div>
             </section>
 
             <section id="datenschutz" class="scroll-mt-28 space-y-6 pt-4">
-              <div class="flex items-center justify-between border-b-2 border-black pb-2.5">
+              <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-neutral-900 inline-block border border-black"></span>
-                  03 // DATENSCHUTZ
+                  03 Datenschutz
                 </h3>
-                <span class="font-mono text-[10px] text-neutral-400">KNOTEN_03</span>
               </div>
               <div class="border border-black p-5 bg-neutral-50 max-w-3xl markdown">
-                <h2>Privacy Policy — Knïps</h2>
-                <p><strong>Effective date:</strong> June 4, 2026<br /><strong>Developer:</strong> Sebastian Rosenzweig — <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a></p>
+                <h2>Datenschutzerklärung</h2>
+                <p><strong>Stand:</strong> 19. Juli 2026</p>
 
-                <h3>Overview</h3>
-                <p>Knïps is a camera app designed for simplicity and privacy. We do not operate any servers. We do not collect, track, or sell your data. All photos and settings are stored locally on your device.</p>
+                <h3>Verantwortlicher</h3>
+                <p>
+                  Sebastian Rosenzweig<br />
+                  Kirchenstr. 8<br />
+                  91054 Erlangen<br />
+                  E-Mail: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>
+                </p>
 
-                <h3>Information We Collect</h3>
-                <p>We collect nothing. Knïps has no backend, no accounts, and no analytics. No personally identifiable information is transmitted to us at any time.</p>
+                <h3>Kontaktaufnahme</h3>
+                <p>Wenn du mich per E-Mail kontaktierst, verarbeite ich deine Angaben (E-Mail-Adresse, Inhalt der Nachricht) nur zur Bearbeitung deiner Anfrage. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Kommunikation) bzw. Art. 6 Abs. 1 lit. b DSGVO, falls es um eine vertragsähnliche Anfrage geht. Die Daten werden gelöscht, sobald sie für die Bearbeitung nicht mehr erforderlich sind.</p>
 
-                <h3>Photo Data &amp; Metadata</h3>
-                <p>Photos taken with Knïps may optionally contain:</p>
+                <h3>App</h3>
+                <p>Knïps speichert Fotos und Einstellungen nur lokal auf deinem Gerät. Es gibt kein Backend, keine Konten, keine Analytics. An mich werden keine personenbezogenen Daten aus der App übermittelt.</p>
+                <p>Die App kann Kamera, Mediathek und optional Standort anfragen — jeweils nur für die jeweilige Funktion (Fotos aufnehmen/speichern bzw. optional GPS ins Bild).</p>
+                <p>Optionaler Druck-Upload zu <strong>dm-Foto</strong> (foto.dm.de) erfolgt nur auf deine ausdrückliche Aktion; die Datei geht direkt an dm, nicht an mich. Knïps ist nicht mit dm verbunden und hat keine kommerzielle Beziehung zu dm. Es gilt deren Datenschutz: <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">foto.dm.de/datenschutz</a>.</p>
+
+                <h3>App-Store</h3>
+                <p>Der Download der App erfolgt über den jeweiligen App Store (zur Zeit nur Apple App Store, später evtl. Google Play Store). Dabei verarbeiten Apple eigene Daten (z. B. Kontodaten, Zahlungsdaten, Geräteinformationen), auf die ich keinen Einfluss habe. Es gelten die Datenschutzbestimmungen des jeweiligen Anbieters:</p>
                 <ul>
-                  <li>Date and time of capture</li>
-                  <li>GPS location (only if you grant permission)</li>
-                  <li>User-defined hashtags or text</li>
+                  <li>Apple: <a href="https://www.apple.com/legal/privacy/de-ww/" target="_blank" rel="noreferrer">https://www.apple.com/legal/privacy/de-ww/</a></li>
                 </ul>
-                <p>This metadata is embedded directly into the image file and stays on your device. You are in full control of whether these are included.</p>
 
-                <h3>Permissions</h3>
-                <p>Knïps may request the following device permissions:</p>
-                <div class="table-wrap">
-                  <table>
-                    <thead><tr><th>Permission</th><th>Purpose</th></tr></thead>
-                    <tbody>
-                      <tr><td>Camera</td><td>To take photos</td></tr>
-                      <tr><td>Photo Library</td><td>To save images to your device</td></tr>
-                      <tr><td>Location</td><td>Optional — to embed GPS coordinates into photos</td></tr>
-                    </tbody>
-                  </table>
-                </div>
-                <p>Permissions are used only for the functionality described above and are never used for tracking or advertising.</p>
+                <h3>Website (GitHub Pages)</h3>
+                <p>Diese Seite wird bei <strong>GitHub Pages</strong> (GitHub Inc. / Microsoft, USA) gehostet. Beim Aufruf speichert GitHub technisch bedingt Server-Logs (u. a. IP-Adresse). Zweck: Auslieferung der Seite. Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO. Daten können in die USA übermittelt werden; GitHub nutzt u. a. Standardvertragsklauseln bzw. das EU-US Data Privacy Framework. Diese Logs werden nach Angaben von GitHub für einen begrenzten Zeitraum gespeichert und dienen ausschließlich der technischen Bereitstellung sowie Sicherheit der Seite. Details: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noreferrer">GitHub Privacy Statement</a>.</p>
 
-                <h3>Third-Party Upload: dm-Foto</h3>
-                <p>Knïps includes an optional feature to upload your photos directly to <strong>dm-Foto</strong> (foto.dm.de) for printing.</p>
-                <p><strong>Important:</strong></p>
-                <ul>
-                  <li>This upload is always <strong>initiated explicitly by you</strong> — nothing is uploaded automatically.</li>
-                  <li>When you upload, your photo (including any embedded metadata such as GPS location or timestamps) is transmitted <strong>directly to dm-Foto</strong>, not to us.</li>
-                  <li>We do not intercept, store, or have access to any uploaded photo or associated data.</li>
-                  <li>Knïps has <strong>no official affiliation or commercial relationship</strong> with dm-Foto.</li>
-                  <li>When using this feature, dm-Foto' own Privacy Policy applies: <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">https://www.foto.dm.de/datenschutz</a></li>
-                </ul>
-                <p><strong>Recommendation:</strong> If you do not want location data included in uploaded photos, disable GPS in Knïps settings before taking the photo.</p>
-                <p>You are solely responsible for the content you upload. Do not upload illegal, abusive, or infringing material. By using the upload feature, you confirm compliance with dm-Foto' Terms of Service.</p>
-
-                <h3>Analytics</h3>
-                <p>None. Knïps does not use any analytics, crash reporting, or usage tracking tools.</p>
-
-                <h3>Data Storage</h3>
-                <p>All data — photos, settings, and metadata — is stored locally on your device. We have no access to it.</p>
-                <p>You are solely responsible for backing up your photos and app data. Deleting the app may delete associated local data.</p>
-
-                <h3>Data Ownership</h3>
-                <p>You retain full and exclusive ownership of your photos and any associated data. Knïps makes no claim to your content and does not monetize it in any way.</p>
-
-                <h3>Your Rights (GDPR)</h3>
-                <p>If you are located in the European Union, you have the following rights under the GDPR:</p>
-                <ul>
-                  <li><strong>Right of access</strong> — to know what data is held about you</li>
-                  <li><strong>Right to rectification</strong> — to correct inaccurate data</li>
-                  <li><strong>Right to erasure</strong> — to request deletion of your data</li>
-                  <li><strong>Right to restriction</strong> — to limit how your data is processed</li>
-                  <li><strong>Right to data portability</strong> — to receive your data in a portable format</li>
-                  <li><strong>Right to object</strong> — to object to processing of your data</li>
-                </ul>
-                <p>Since Knïps stores no data on any server, there is nothing on our end to access, correct, or delete. All data is on your device and fully under your control.</p>
-                <p>For any questions, contact: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a></p>
-
-                <h3>Children's Privacy</h3>
-                <p>Knïps is not directed at children under the age of <strong>16</strong>. We do not knowingly collect personal data from minors. If you believe a minor has used the app in a way that raises privacy concerns, please contact us.</p>
-
-                <h3>Security</h3>
-                <p>Because all data is stored locally on your device, its security depends on your device's own protections (lock screen, encryption, etc.). We do not transmit or have access to your data, so we cannot be responsible for device-level breaches.</p>
-
-                <h3>Changes to This Policy</h3>
-                <p>We may update this Privacy Policy occasionally. Any changes will be posted on this page with a revised effective date. Continued use of the app after changes constitutes acceptance.</p>
-
-                <h3>Contact</h3>
-                <p>Sebastian Rosenzweig<br /><a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a></p>
-                <p><em>Developed with ❤️ in Erlangen.</em></p>
+                <h3>Rechte</h3>
+                <p>Du hast die Rechte nach der DSGVO (u. a. Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit) sowie das Recht, dich bei einer Aufsichtsbehörde zu beschweren (z. B. BayLDA). Da ich keine App-Daten speichere, gibt es bei mir dazu nichts zu löschen oder auszuhändigen — außer dem, was GitHub technisch in Hosting-Logs verarbeitet.</p>
               </div>
             </section>
 
             <section id="ueber" class="scroll-mt-28 space-y-6 pt-4">
-              <div class="flex items-center justify-between border-b-2 border-black pb-2.5">
+              <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-[#135D52] inline-block border border-black"></span>
-                  04 // ÜBER / IMPRESSUM
+                  04 Über
                 </h3>
-                <span class="font-mono text-[10px] text-neutral-400">KNOTEN_04</span>
               </div>
               <div class="border border-black p-5 bg-neutral-50 max-w-3xl markdown">
                 <p><strong>Knïps</strong></p>
-                <p>A camera app inspired by the analog experience.</p>
+                <p>knïps bringt dir die Nostalgie analoger Fotografie auf dein Smartphone: Filmrolle einlegen, fotografieren, drucken. Fast wie früher.</p>
 
-                <h3>Overview</h3>
-                <p>Knïps brings back the feeling of analog photography. Instead of taking dozens of photos, it encourages you to capture a single moment with intention.</p>
-                <p>Photos are not immediately visible after capture. You only see them when you choose to export them or save them to your camera roll—just like waiting for film to be developed.</p>
-
-                <h3>Core Idea</h3>
-                <p>In a world of unlimited digital photos, Knïps focuses on restraint and presence. One photo per moment, not one hundred.</p>
-
-                <h3>Key Features</h3>
+                <h3>Features</h3>
                 <ul>
-                  <li>Delayed photo reveal for an analog-style experience</li>
-                  <li>Photos stored locally on your device</li>
-                  <li>Optional export to camera roll or external services</li>
-                  <li>Optional date and time stamps rendered directly onto images</li>
-                  <li>Optional location imprinting</li>
-                  <li>Optional custom hashtags rendered onto photos</li>
+                  <li>Zeit- und Ortsstempel optional auf dem Bild anzeigen</li>
+                  <li>Direkter Upload zum Druckanbieter</li>
+                  <li>Automatisches Sichern in der Galerie — so hast du deine Fotos auch digital</li>
                 </ul>
-
-                <h3>Printing</h3>
-                <p>You can send your photos to external printing services via your browser (for example, dm photo printing services). Knïps is not affiliated with these providers.</p>
-
-                <h3>Privacy</h3>
-                <p>Knïps is built with privacy in mind:</p>
-                <ul>
-                  <li>No analytics</li>
-                  <li>No cloud storage</li>
-                  <li>No data collection</li>
-                  <li>Full user control over all photos</li>
-                </ul>
-
-                <h3>TestFlight</h3>
-                <p>Knïps is currently in beta and available via TestFlight. Features may change as development continues.</p>
-
-                <h3>Contact</h3>
-                <p>For feedback or support:<br /><a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a></p>
               </div>
+            </section>
+
+            <section id="kontakt" class="scroll-mt-28 space-y-6 pt-4">
+              <div class="border-b-2 border-black pb-2.5">
+                <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
+                  <span class="w-3.5 h-3.5 bg-[#F4AC24] inline-block border border-black"></span>
+                  05 Kontakt / Impressum
+                </h3>
+              </div>
+              <div class="border border-black p-5 bg-neutral-50 max-w-3xl markdown">
+                <h2>Impressum</h2>
+                <p><strong>Angaben gemäß § 5 DDG</strong></p>
+                <p>
+                  Sebastian Rosenzweig<br />
+                  Kirchenstr. 8<br />
+                  91054 Erlangen<br />
+                  Deutschland
+                </p>
+
+                <h3>Kontakt</h3>
+                <p>E-Mail: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a></p>
+
+                <h3>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h3>
+                <p>Sebastian Rosenzweig, Anschrift wie oben</p>
+
+                </div>
             </section>
 
           </div>
 
           <div class="flex flex-col sm:flex-row justify-between items-center border-t-2 border-black pt-6 mt-16 text-neutral-500 text-[10px] font-mono leading-relaxed gap-4 w-full">
             <div class="flex items-center gap-1">
-              <span class="font-bold text-[#0D0E0E]">ENTWICKELT IN:</span>
-              <span class="text-[#135D52] font-bold">Erlangen</span>
+              <span class="font-bold text-[#0D0E0E]">Entwickelt mit ❤️ in Erlangen.</span>
             </div>
             <div class="flex gap-4 font-bold uppercase tracking-wider text-neutral-400">
               <span>© 2026 knïps</span>
