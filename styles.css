@@ -84,6 +84,11 @@ a.store-link:hover { color: var(--color-white); }
     display: inline-flex;
   }
 
+  /* Keep brand / content padding aligned; hide store badge if crowded */
+  .header-store {
+    display: none;
+  }
+
   .nav-overlay {
     display: block;
     position: fixed;
@@ -102,20 +107,37 @@ a.store-link:hover { color: var(--color-white); }
     display: none !important;
   }
 
+  /* Fully out of flow + no left-edge bleed when closed */
   .site-aside {
-    position: fixed;
+    position: fixed !important;
     top: 74px;
     left: 0;
     bottom: 0;
-    width: min(18rem, 85vw);
+    width: min(18rem, 85vw) !important;
+    max-width: 85vw;
     z-index: 50;
-    transform: translateX(-100%);
+    transform: translate3d(-105%, 0, 0);
     transition: transform 0.22s ease;
     overflow-y: auto;
-    box-shadow: 4px 0 0 #0D0E0E;
+    overflow-x: hidden;
+    box-shadow: none;
+    border-right-width: 0 !important;
+    margin: 0;
+    pointer-events: none;
+    visibility: hidden;
   }
   .site-aside.is-open {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
+    box-shadow: 4px 0 0 #0D0E0E;
+    border-right-width: 2px !important;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  /* Main fills full width on mobile */
+  #main-scroll-container {
+    width: 100%;
+    max-width: 100%;
   }
 
   body.nav-open {
@@ -134,5 +156,8 @@ a.store-link:hover { color: var(--color-white); }
     position: relative !important;
     transform: none !important;
     box-shadow: none !important;
+    visibility: visible !important;
+    pointer-events: auto !important;
+    border-right-width: 2px !important;
   }
 }
