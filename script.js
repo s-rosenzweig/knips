@@ -1,5 +1,5 @@
 (function () {
-  const sections = ['allgemein', 'beispiele', 'datenschutz', 'ueber', 'kontakt'];
+  const sections = ['allgemein', 'beispiele', 'datenschutz', 'kontakt'];
   const container = document.getElementById('main-scroll-container');
   const navButtons = document.querySelectorAll('.nav-btn');
   const brandHeader = document.getElementById('brand-header-trigger');

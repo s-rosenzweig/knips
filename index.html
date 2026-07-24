@@ -2,7 +2,7 @@
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <title>knïps</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -12,33 +12,7 @@
       <header class="site-header h-[74px] shrink-0 bg-white border-b-2 border-black flex items-center justify-between px-6 py-4 md:px-8 select-none shadow-[0px_2px_8px_rgba(0,0,0,0.04)] z-40">
         <div class="flex items-center gap-3 cursor-pointer min-w-0" id="brand-header-trigger">
           <div class="flex-shrink-0 animate-pulse-slow">
-            <svg width="38" height="38" viewBox="0 0 500 500" class="select-none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect x="240" y="30" width="110" height="35" rx="10" fill="#0D0E0E" />
-              <path d="M 50 150 L 180 150 L 180 380 L 155 380 C 155 300, 140 280, 50 280 C 40 280, 30 270, 30 250 L 30 170 C 30 155, 40 150, 50 150 Z" fill="#0D0E0E" stroke="#0D0E0E" stroke-width="4" stroke-linejoin="round" />
-              <rect x="40" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
-              <rect x="75" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
-              <rect x="110" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
-              <rect x="145" y="165" width="18" height="12" rx="3" fill="#FFFFFF" />
-              <path d="M 436 185 C 460 190, 480 175, 482 155 C 483 145, 477 140, 472 145 C 468 149, 471 155, 468 160 C 465 164, 453 168, 436 166 Z" fill="#0D0E0E" />
-              <circle cx="478" cy="144" r="10" fill="#0D0E0E" />
-              <rect x="180" y="60" width="260" height="410" rx="65" fill="#0D0E0E" />
-              <g clip-path="url(#canister-clip)">
-                <clipPath id="canister-clip"><rect x="192" y="72" width="236" height="386" rx="53" /></clipPath>
-                <rect x="192" y="72" width="55" height="386" fill="#F4AC24" />
-                <rect x="247" y="72" width="40" height="386" fill="#88C9A1" />
-                <rect x="287" y="72" width="7" height="386" fill="#0D0E0E" />
-                <rect x="294" y="72" width="38" height="386" fill="#135D52" />
-                <rect x="332" y="72" width="48" height="386" fill="#1FA68A" />
-                <rect x="380" y="72" width="50" height="386" fill="#E55B2B" />
-                <circle cx="308" cy="254" r="82" fill="#0D0E0E" />
-                <rect x="281" y="180" width="35" height="148" rx="12" fill="#FFFFFF" />
-                <path d="M 314 246 L 384 182 C 388 178, 394 183, 390 188 L 332 258 Z" fill="#FFFFFF" />
-                <path d="M 314 256 L 383 325 C 388 330, 394 324, 389 319 L 332 250 Z" fill="#FFFFFF" />
-                <circle cx="355" cy="270" r="11" fill="#FFFFFF" />
-                <circle cx="383" cy="270" r="11" fill="#FFFFFF" />
-              </g>
-              <rect x="184" y="64" width="252" height="402" rx="61" fill="none" stroke="#0D0E0E" stroke-width="8" />
-            </svg>
+            <img src="logo_transp.png" alt="" width="48" height="48" class="select-none" />
           </div>
           <h1 class="text-lg md:text-xl font-black tracking-tighter">knïps</h1>
         </div>
@@ -69,11 +43,8 @@
             <a href="#datenschutz" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="datenschutz">
               <span class="font-bold">Datenschutz</span><span class="text-[9px] tracking-normal opacity-50 font-mono">03</span>
             </a>
-            <a href="#ueber" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="ueber">
-              <span class="font-bold">Über</span><span class="text-[9px] tracking-normal opacity-50 font-mono">04</span>
-            </a>
             <a href="#kontakt" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="kontakt">
-              <span class="font-bold">Kontakt / Impressum</span><span class="text-[9px] tracking-normal opacity-50 font-mono">05</span>
+              <span class="font-bold">Kontakt / Impressum</span><span class="text-[9px] tracking-normal opacity-50 font-mono">04</span>
             </a>
           </nav>
         </aside>
@@ -85,26 +56,52 @@
               <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-[#1FA68A] inline-block border border-black"></span>
-                  01 Allgemein
+                  01 // Allgemein
                 </h3>
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
-                <div class="md:col-span-7 space-y-6">
-                  <h2 class="text-4xl sm:text-5xl font-black leading-[0.95] tracking-tight text-[#0D0E0E] font-sans">
-                    Weniger ist mehr.
-                  </h2>
-                  <p class="text-sm font-mono text-neutral-600 leading-relaxed">
-                    knïps bringt dir die Nostalgie analoger Fotografie auf dein Smartphone: Filmrolle einlegen, fotografieren, drucken. Fast wie früher.
-                  </p>
-                  <div class="flex flex-wrap gap-3">
-                    <span class="bg-black text-white px-5 py-2.5 font-mono text-xs font-bold border-2 border-black opacity-50 cursor-not-allowed select-none" aria-disabled="true" title="Demnächst">App Store</span>
-                    <a href="#beispiele" data-scroll="beispiele" class="btn-link bg-white text-black px-5 py-2.5 font-mono text-xs font-bold hover:bg-neutral-50 transition-all cursor-pointer border-2 border-black active:translate-x-[1px] active:translate-y-[1px] shadow-[3.5px_3.5px_0px_0px_#F4AC24]">Beispiele</a>
+              <div class="hero-stack">
+                <div class="hero-intro">
+                  <img
+                    src="logo_transp.png"
+                    alt=""
+                    width="96"
+                    height="96"
+                    class="hero-intro-logo select-none"
+                    aria-hidden="true"
+                  />
+                  <div class="hero-intro-copy">
+                    <h2 class="text-4xl sm:text-5xl font-black leading-[0.95] tracking-tight text-[#0D0E0E] font-sans">
+                      Weniger ist mehr.
+                    </h2>
+                    <p class="text-sm font-mono text-neutral-600 leading-relaxed mt-5">
+                      knïps bringt dir die Nostalgie analoger Fotografie auf dein Smartphone: Filmrolle einlegen, fotografieren, drucken. Fast wie früher.
+                    </p>
                   </div>
                 </div>
-                <div class="md:col-span-5">
-                  <div class="border-2 border-black p-2 bg-white shadow-[4px_4px_0px_0px_#E55B2B]">
-                    <div class="w-full aspect-[4/3] border border-black bg-neutral-100" aria-hidden="true"></div>
-                  </div>
+
+                <figure class="hero-shot shot-frame shadow-[4px_4px_0px_0px_#E55B2B]">
+                  <img
+                    src="imgs/img4.png"
+                    alt="Ablauf: Filmrolle erstellen, Fotos knipsen, online drucken, analog genießen"
+                    width="720"
+                    height="1280"
+                    class="shot-img"
+                    loading="eager"
+                    decoding="async"
+                  />
+                </figure>
+
+                <div class="hero-features border border-black p-5 bg-neutral-50 markdown">
+                  <h3>Features</h3>
+                  <ul>
+                    <li>Zeit- und Ortsstempel optional auf dem Bild anzeigen</li>
+                    <li>Direkter Upload zum Druckanbieter</li>
+                    <li>Automatisches Sichern in der Galerie — so hast du deine Fotos auch digital</li>
+                  </ul>
+                </div>
+                
+                <div class="hero-cta">
+                  <span class="bg-black text-white px-5 py-2.5 font-mono text-xs font-bold border-2 border-black opacity-50 cursor-not-allowed select-none" aria-disabled="true" title="Demnächst">App Store</span>
                 </div>
               </div>
             </section>
@@ -113,24 +110,64 @@
               <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-[#E55B2B] inline-block border border-black"></span>
-                  02 Beispiele
+                  02 // Beispiele
                 </h3>
               </div>
-              <div class="space-y-4">
-                <p class="text-xs font-mono text-neutral-500 max-w-xl">Platzhalter — echte Screenshots folgen.</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 pt-2">
-                  <div class="space-y-3">
-                    <div class="border-2 border-black bg-neutral-100 overflow-hidden shadow-[4px_4px_0px_0px_#135D52]">
-                      <div class="w-full aspect-[16/10] select-none" aria-hidden="true"></div>
+              <div class="space-y-8">
+                <div class="shots-grid">
+                  <figure class="space-y-3">
+                    <div class="shot-frame shadow-[4px_4px_0px_0px_#E55B2B]">
+                      <img
+                        src="imgs/img1.png"
+                        alt="knïps App: Sucher mit Filmrolle Summer und Zeitstempel"
+                        width="720"
+                        height="1280"
+                        class="shot-img"
+                        loading="lazy"
+                        decoding="async"
+                      />
                     </div>
-                    <p class="font-mono text-[10px] font-bold text-[#0D0E0E]">01 Sucher</p>
-                  </div>
-                  <div class="space-y-3">
-                    <div class="border-2 border-black bg-neutral-100 overflow-hidden shadow-[4px_4px_0px_0px_#F4AC24]">
-                      <div class="w-full aspect-[16/10] select-none" aria-hidden="true"></div>
+                    <figcaption class="font-mono text-[10px] font-bold text-[#0D0E0E] flex items-center gap-2">
+                      <span class="text-neutral-400">01</span>
+                      <span>Knïps</span>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="space-y-3">
+                    <div class="shot-frame shadow-[4px_4px_0px_0px_#135D52]">
+                      <img
+                        src="imgs/img2.png"
+                        alt="Ort- und Zeitstempel auf dem Foto im Sucher"
+                        width="720"
+                        height="1280"
+                        class="shot-img"
+                        loading="lazy"
+                        decoding="async"
+                      />
                     </div>
-                    <p class="font-mono text-[10px] font-bold text-[#0D0E0E]">02 Filmrolle</p>
-                  </div>
+                    <figcaption class="font-mono text-[10px] font-bold text-[#0D0E0E] flex items-center gap-2">
+                      <span class="text-neutral-400">02</span>
+                      <span>Ort &amp; Zeitstempel</span>
+                    </figcaption>
+                  </figure>
+
+                  <figure class="space-y-3">
+                    <div class="shot-frame shadow-[4px_4px_0px_0px_#F4AC24]">
+                      <img
+                        src="imgs/img3.png"
+                        alt="Hashtag-Funktion im Sucher"
+                        width="720"
+                        height="1280"
+                        class="shot-img"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <figcaption class="font-mono text-[10px] font-bold text-[#0D0E0E] flex items-center gap-2">
+                      <span class="text-neutral-400">03</span>
+                      <span>Hashtag-Funktion</span>
+                    </figcaption>
+                  </figure>
                 </div>
               </div>
             </section>
@@ -139,7 +176,7 @@
               <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-neutral-900 inline-block border border-black"></span>
-                  03 Datenschutz
+                  03 // Datenschutz
                 </h3>
               </div>
               <div class="border border-black p-5 bg-neutral-50 max-w-3xl markdown">
@@ -176,31 +213,11 @@
               </div>
             </section>
 
-            <section id="ueber" class="scroll-mt-28 space-y-6 pt-4">
-              <div class="border-b-2 border-black pb-2.5">
-                <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
-                  <span class="w-3.5 h-3.5 bg-[#135D52] inline-block border border-black"></span>
-                  04 Über
-                </h3>
-              </div>
-              <div class="border border-black p-5 bg-neutral-50 max-w-3xl markdown">
-                <p><strong>Knïps</strong></p>
-                <p>knïps bringt dir die Nostalgie analoger Fotografie auf dein Smartphone: Filmrolle einlegen, fotografieren, drucken. Fast wie früher.</p>
-
-                <h3>Features</h3>
-                <ul>
-                  <li>Zeit- und Ortsstempel optional auf dem Bild anzeigen</li>
-                  <li>Direkter Upload zum Druckanbieter</li>
-                  <li>Automatisches Sichern in der Galerie — so hast du deine Fotos auch digital</li>
-                </ul>
-              </div>
-            </section>
-
             <section id="kontakt" class="scroll-mt-28 space-y-6 pt-4">
               <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-[#F4AC24] inline-block border border-black"></span>
-                  05 Kontakt / Impressum
+                  04 // Kontakt / Impressum
                 </h3>
               </div>
               <div class="border border-black p-5 bg-neutral-50 max-w-3xl markdown">
