@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="h-screen bg-white text-[#0D0E0E] flex flex-col relative overflow-hidden font-sans">
+    <div class="site-shell bg-white text-[#0D0E0E] flex flex-col relative overflow-hidden font-sans">
 
-      <header class="site-header h-[74px] shrink-0 bg-white border-b-2 border-black flex items-center justify-between px-6 py-4 md:px-8 select-none shadow-[0px_2px_8px_rgba(0,0,0,0.04)] z-40">
+      <header class="site-header shrink-0 bg-white border-b-2 border-black flex items-center justify-between px-6 md:px-8 select-none shadow-[0px_2px_8px_rgba(0,0,0,0.04)] z-40">
         <div class="flex items-center gap-3 cursor-pointer min-w-0" id="brand-header-trigger">
           <div class="flex-shrink-0 animate-pulse-slow">
             <img src="logo_transp.png" alt="" width="48" height="48" class="select-none" />
@@ -17,10 +17,10 @@
           <h1 class="text-lg md:text-xl font-black tracking-tighter">knïps</h1>
         </div>
         <div class="flex items-center gap-3 shrink-0">
-          <span class="header-store inline-flex items-center gap-1.5 font-mono text-[9px] uppercase font-bold border border-black py-1 px-2.5 bg-neutral-50 opacity-50 cursor-not-allowed select-none" aria-disabled="true" title="Demnächst">
-            <span class="w-1.5 h-1.5 bg-neutral-400 rounded-full"></span>
-            <span>App Store</span>
-          </span>
+          <a href="https://testflight.apple.com/join/eQ4Xf1Ek" target="_blank" rel="noopener noreferrer" class="header-store inline-flex items-center gap-1.5 font-mono text-[9px] uppercase font-bold border border-black py-1 px-2.5 bg-neutral-50 hover:bg-white transition-colors">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="10" height="12" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+            <span>Test App</span>
+          </a>
           <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
             <span class="menu-toggle-bar"></span>
             <span class="menu-toggle-bar"></span>
@@ -29,7 +29,7 @@
         </div>
       </header>
 
-      <div class="flex-1 flex flex-col md:flex-row min-h-0 overflow-y-auto md:overflow-hidden relative">
+      <div class="site-scroll flex-1 flex flex-col md:flex-row min-h-0 overflow-y-auto md:overflow-hidden relative">
         <div id="nav-overlay" class="nav-overlay" hidden></div>
 
         <aside id="site-nav" class="site-aside w-full md:w-72 border-r-2 border-black p-6 md:p-8 flex flex-col gap-8 bg-neutral-50 shrink-0 select-none md:h-full md:overflow-hidden">
@@ -49,7 +49,7 @@
           </nav>
         </aside>
 
-        <main id="main-scroll-container" class="flex-1 p-6 md:p-10 pixel-grid flex flex-col justify-between space-y-16 overflow-y-auto h-full bg-white">
+        <main id="main-scroll-container" class="site-scroll flex-1 p-6 md:p-10 pixel-grid flex flex-col justify-between space-y-16 overflow-y-auto h-full bg-white">
           <div class="max-w-4xl mx-auto w-full space-y-24">
 
             <section id="allgemein" class="scroll-mt-28 space-y-6 pt-4">
@@ -81,7 +81,7 @@
 
                 <figure class="hero-shot shot-frame shadow-[4px_4px_0px_0px_#E55B2B]">
                   <img
-                    src="imgs/web_start.png"
+                    src="imgs/appstore_02.png"
                     alt="Ablauf: Filmrolle erstellen, Fotos knipsen, online drucken, analog genießen"
                     width="720"
                     height="1280"
@@ -101,7 +101,10 @@
                 </div>
                 
                 <div class="hero-cta">
-                  <span class="bg-black text-white px-5 py-2.5 font-mono text-xs font-bold border-2 border-black opacity-50 cursor-not-allowed select-none" aria-disabled="true" title="Demnächst">App Store</span>
+                  <a href="https://testflight.apple.com/join/eQ4Xf1Ek" target="_blank" rel="noopener noreferrer" class="bg-black text-white px-5 py-2.5 font-mono text-xs font-bold border-2 border-black hover:bg-[#E55B2B] transition-colors inline-flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12" height="14" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+                    Test App
+                  </a>
                 </div>
               </div>
             </section>
@@ -118,7 +121,7 @@
                   <figure class="space-y-3">
                     <div class="shot-frame shadow-[4px_4px_0px_0px_#E55B2B]">
                       <img
-                        src="imgs/web_01.png"
+                        src="imgs/appstore_01.png"
                         alt="knïps App: Sucher mit Filmrolle Summer und Zeitstempel"
                         width="720"
                         height="1280"
@@ -136,7 +139,7 @@
                   <figure class="space-y-3">
                     <div class="shot-frame shadow-[4px_4px_0px_0px_#135D52]">
                       <img
-                        src="imgs/web_02.png"
+                        src="imgs/appstore_03.png"
                         alt="Ort- und Zeitstempel auf dem Foto im Sucher"
                         width="720"
                         height="1280"
@@ -154,7 +157,7 @@
                   <figure class="space-y-3">
                     <div class="shot-frame shadow-[4px_4px_0px_0px_#F4AC24]">
                       <img
-                        src="imgs/web_3.png"
+                        src="imgs/appstore_04.png"
                         alt="Hashtag-Funktion im Sucher"
                         width="720"
                         height="1280"
