@@ -37,6 +37,42 @@
   justify-content: center;
   gap: 0.75rem;
 }
+.android-test {
+  width: 100%;
+  box-sizing: border-box;
+}
+.android-test-label {
+  margin: 0;
+}
+.android-test-hint {
+  margin: 0;
+}
+.android-test-steps {
+  list-style: none;
+  margin: 1rem 0 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.android-test-steps li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.android-test-step-num {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #0D0E0E;
+  background: #fff;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 .store-link--pending {
   opacity: 0.55;
   cursor: not-allowed;
