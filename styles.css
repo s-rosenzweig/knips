@@ -203,6 +203,46 @@ a.btn-link:hover { color: inherit; }
 a.store-link:hover { color: var(--color-white); }
 
 /* ── mobile hamburger / drawer nav ── */
+.lang-toggle {
+  display: inline-flex;
+  flex-shrink: 0;
+  border: 2px solid #0D0E0E;
+  background: #fff;
+}
+.lang-toggle button {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-right: 2px solid #0D0E0E;
+  background: #fafafa;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+}
+.lang-toggle button:last-child {
+  border-right: 0;
+}
+.lang-toggle button:hover {
+  background: #fff;
+}
+.lang-toggle button.is-active,
+.lang-toggle button[aria-pressed="true"] {
+  background: #F4AC24;
+}
+.lang-toggle button.is-active:hover,
+.lang-toggle button[aria-pressed="true"]:hover {
+  background: #F4AC24;
+}
+
+@media (max-width: 380px) {
+  .lang-toggle button {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+}
+
 .menu-toggle {
   display: none;
   width: 40px;

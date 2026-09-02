@@ -22,10 +22,15 @@
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="10" height="12" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
               <span>Test App</span>
             </a>
-            <a href="#android-test" class="header-store inline-flex items-center gap-1.5 font-mono text-[9px] uppercase font-bold border border-black py-1 px-2.5 bg-neutral-50 hover:bg-white transition-colors" title="Android-Test: zuerst Gruppe, dann App">
+            <a href="#android-test" class="header-store inline-flex items-center gap-1.5 font-mono text-[9px] uppercase font-bold border border-black py-1 px-2.5 bg-neutral-50 hover:bg-white transition-colors" data-i18n-title="android.title" title="Android-Test: zuerst Gruppe, dann App">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="10" height="12" fill="currentColor" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
               <span>Android</span>
             </a>
+          </div>
+          <div class="lang-toggle" role="group" data-i18n-aria="lang.group" aria-label="Sprache">
+            <button type="button" data-lang-btn="en" data-i18n-aria="lang.en" data-i18n-title="lang.en" aria-label="English" aria-pressed="false" title="English">🇬🇧</button>
+            <button type="button" data-lang-btn="de" data-i18n-aria="lang.de" data-i18n-title="lang.de" aria-label="Deutsch" aria-pressed="true" title="Deutsch">🇩🇪</button>
+            <button type="button" data-lang-btn="gsw" data-i18n-aria="lang.gsw" data-i18n-title="lang.gsw" aria-label="Schwiizerdütsch" aria-pressed="false" title="Schwiizerdütsch">🇨🇭</button>
           </div>
           <button type="button" id="menu-toggle" class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" aria-controls="site-nav">
             <span class="menu-toggle-bar"></span>
@@ -41,16 +46,19 @@
         <aside id="site-nav" class="site-aside w-full md:w-72 border-r-2 border-black p-6 md:p-8 flex flex-col gap-8 bg-neutral-50 shrink-0 select-none md:h-full md:overflow-hidden">
           <nav class="flex flex-col gap-1.5">
             <a href="#allgemein" class="nav-btn active text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="allgemein">
-              <span class="font-bold">Allgemein</span><span class="text-[9px] tracking-normal opacity-50 font-mono">01</span>
+              <span class="font-bold" data-i18n="nav.overview">Allgemein</span><span class="text-[9px] tracking-normal opacity-50 font-mono">01</span>
             </a>
             <a href="#beispiele" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="beispiele">
-              <span class="font-bold">Beispiele</span><span class="text-[9px] tracking-normal opacity-50 font-mono">02</span>
+              <span class="font-bold" data-i18n="nav.examples">Beispiele</span><span class="text-[9px] tracking-normal opacity-50 font-mono">02</span>
+            </a>
+            <a href="#nutzung" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="nutzung">
+              <span class="font-bold" data-i18n="nav.terms">Nutzung</span><span class="text-[9px] tracking-normal opacity-50 font-mono">03</span>
             </a>
             <a href="#datenschutz" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="datenschutz">
-              <span class="font-bold">Datenschutz</span><span class="text-[9px] tracking-normal opacity-50 font-mono">03</span>
+              <span class="font-bold" data-i18n="nav.privacy">Datenschutz</span><span class="text-[9px] tracking-normal opacity-50 font-mono">04</span>
             </a>
             <a href="#kontakt" class="nav-btn text-left py-2 text-[11px] font-mono tracking-wider transition-all uppercase cursor-pointer border-b-2 flex items-center justify-between" data-section="kontakt">
-              <span class="font-bold">Kontakt / Impressum</span><span class="text-[9px] tracking-normal opacity-50 font-mono">04</span>
+              <span class="font-bold" data-i18n="nav.contact">Kontakt / Impressum</span><span class="text-[9px] tracking-normal opacity-50 font-mono">05</span>
             </a>
           </nav>
         </aside>
@@ -62,7 +70,7 @@
               <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-[#1FA68A] inline-block border border-black"></span>
-                  01 // Allgemein
+                  01 // <span data-i18n="nav.overview">Allgemein</span>
                 </h3>
               </div>
               <div class="hero-stack">
@@ -76,10 +84,10 @@
                     aria-hidden="true"
                   />
                   <div class="hero-intro-copy">
-                    <h2 class="text-4xl sm:text-5xl font-black leading-[0.95] tracking-tight text-[#0D0E0E] font-sans">
+                    <h2 class="text-4xl sm:text-5xl font-black leading-[0.95] tracking-tight text-[#0D0E0E] font-sans" data-i18n="hero.headline">
                       Weniger ist mehr.
                     </h2>
-                    <p class="text-sm font-mono text-neutral-600 leading-relaxed mt-5">
+                    <p class="text-sm font-mono text-neutral-600 leading-relaxed mt-5" data-i18n="hero.lead">
                       Knïps bringt dir die Nostalgie analoger Fotografie auf dein Smartphone: Filmrolle einlegen, fotografieren, drucken. Fast wie früher.
                     </p>
                   </div>
@@ -89,6 +97,7 @@
                   <img
                     src="imgs/appstore_02.png"
                     alt="Ablauf: Filmrolle erstellen, Fotos knipsen, online drucken, analog genießen"
+                    data-i18n-alt="hero.shotAlt"
                     width="720"
                     height="1280"
                     class="shot-img"
@@ -98,38 +107,38 @@
                 </figure>
 
                 <div class="hero-features border border-black p-5 bg-neutral-50 markdown">
-                  <h3>Features</h3>
+                  <h3 data-i18n="hero.featuresTitle">Features</h3>
                   <ul>
-                    <li>Zeit- und Ortsstempel für deine Bilder</li>
-                    <li>Individuelle Hashtags auf jedem Foto</li>
-                    <li>Direkter Upload fürs online drucken</li>
+                    <li data-i18n="hero.feat1">Zeit- und Ortsstempel für deine Bilder</li>
+                    <li data-i18n="hero.feat2">Individuelle Hashtags auf jedem Foto</li>
+                    <li data-i18n="hero.feat3">Direkter Upload fürs online drucken</li>
                   </ul>
                 </div>
                 
                 <div class="hero-cta">
                   <a href="https://testflight.apple.com/join/eQ4Xf1Ek" target="_blank" rel="noopener noreferrer" class="bg-black text-white px-5 py-2.5 font-mono text-xs font-bold border-2 border-black hover:bg-[#E55B2B] transition-colors inline-flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="12" height="14" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
-                    Test App (iOS)
+                    <span data-i18n="hero.ctaIos">Test App (iOS)</span>
                   </a>
                 </div>
 
                 <div id="android-test" class="android-test border border-black p-5 bg-neutral-50 scroll-mt-28">
-                  <p class="android-test-label font-mono text-[10px] font-bold uppercase tracking-wider text-[#0D0E0E]">Android-Test</p>
-                  <p class="android-test-hint font-mono text-[11px] text-neutral-600 leading-relaxed mt-2">
+                  <p class="android-test-label font-mono text-[10px] font-bold uppercase tracking-wider text-[#0D0E0E]" data-i18n="android.label">Android-Test</p>
+                  <p class="android-test-hint font-mono text-[11px] text-neutral-600 leading-relaxed mt-2" data-i18n="android.hint">
                     Zuerst der Google-Gruppe beitreten, danach die App über den Play-Testlink laden.
                   </p>
                   <ol class="android-test-steps">
                     <li>
                       <span class="android-test-step-num" aria-hidden="true">1</span>
                       <a href="https://groups.google.com/g/knips-app-testing" target="_blank" rel="noopener noreferrer" class="bg-white text-[#0D0E0E] px-5 py-2.5 font-mono text-xs font-bold border-2 border-black hover:bg-[#F4AC24] transition-colors inline-flex items-center gap-2">
-                        Gruppe beitreten
+                        <span data-i18n="android.join">Gruppe beitreten</span>
                       </a>
                     </li>
                     <li>
                       <span class="android-test-step-num" aria-hidden="true">2</span>
                       <a href="https://play.google.com/apps/testing/com.knips.app" target="_blank" rel="noopener noreferrer" class="bg-black text-white px-5 py-2.5 font-mono text-xs font-bold border-2 border-black hover:bg-[#1FA68A] transition-colors inline-flex items-center gap-2">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="12" height="14" fill="currentColor" aria-hidden="true"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
-                        App laden
+                        <span data-i18n="android.load">App laden</span>
                       </a>
                     </li>
                   </ol>
@@ -141,7 +150,7 @@
               <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-[#E55B2B] inline-block border border-black"></span>
-                  02 // Beispiele
+                  02 // <span data-i18n="nav.examples">Beispiele</span>
                 </h3>
               </div>
               <div class="space-y-8">
@@ -151,6 +160,7 @@
                       <img
                         src="imgs/appstore_01.png"
                         alt="knïps App: Sucher mit Filmrolle Summer und Zeitstempel"
+                        data-i18n-alt="shots.alt1"
                         width="720"
                         height="1280"
                         class="shot-img"
@@ -160,7 +170,7 @@
                     </div>
                     <figcaption class="font-mono text-[10px] font-bold text-[#0D0E0E] flex items-center gap-2">
                       <span class="text-neutral-400">01</span>
-                      <span>Knïps</span>
+                      <span data-i18n="shots.knips">Knïps</span>
                     </figcaption>
                   </figure>
 
@@ -169,6 +179,7 @@
                       <img
                         src="imgs/appstore_03.png"
                         alt="Ort- und Zeitstempel auf dem Foto im Sucher"
+                        data-i18n-alt="shots.alt2"
                         width="720"
                         height="1280"
                         class="shot-img"
@@ -178,7 +189,7 @@
                     </div>
                     <figcaption class="font-mono text-[10px] font-bold text-[#0D0E0E] flex items-center gap-2">
                       <span class="text-neutral-400">02</span>
-                      <span>Ort &amp; Zeitstempel</span>
+                      <span data-i18n="shots.place">Ort &amp; Zeitstempel</span>
                     </figcaption>
                   </figure>
 
@@ -187,6 +198,7 @@
                       <img
                         src="imgs/appstore_04.png"
                         alt="Hashtag-Funktion im Sucher"
+                        data-i18n-alt="shots.alt3"
                         width="720"
                         height="1280"
                         class="shot-img"
@@ -196,10 +208,29 @@
                     </div>
                     <figcaption class="font-mono text-[10px] font-bold text-[#0D0E0E] flex items-center gap-2">
                       <span class="text-neutral-400">03</span>
-                      <span>Hashtag-Funktion</span>
+                      <span data-i18n="shots.hashtag">Hashtag-Funktion</span>
                     </figcaption>
                   </figure>
                 </div>
+              </div>
+            </section>
+
+            <section id="nutzung" class="scroll-mt-28 space-y-6 pt-4">
+              <div class="border-b-2 border-black pb-2.5">
+                <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
+                  <span class="w-3.5 h-3.5 bg-[#F4AC24] inline-block border border-black"></span>
+                  03 // <span data-i18n="nav.terms">Nutzung</span>
+                </h3>
+              </div>
+              <div class="border border-black p-5 bg-neutral-50 max-w-3xl markdown">
+                <h2 data-i18n="terms.heading">Nutzungsbedingungen</h2>
+                <p><strong data-i18n="terms.asOf">Stand: 2. September 2026</strong></p>
+                <p data-i18n="terms.p1">Knïps ist eine Kamera-App. Wenn du sie nutzt, akzeptierst du diese Bedingungen.</p>
+                <p data-i18n="terms.p2">Du nutzt Knïps auf eigene Gefahr. Ich übernehme keine Verantwortung für verlorene Fotos, kaputte Dateien, Probleme mit Drittanbieter-Diensten oder wenn die App einen schlechten Tag hat.</p>
+                <p data-i18n="terms.p3">Beim Druck-Upload kann die Datei an dm-Foto oder Coop Fotoservice gehen, je nach Land — nicht an mich. Es gibt keine Zusammenarbeit und keine kommerzielle Beziehung mit ihnen.</p>
+                <p data-i18n="terms.p4">Fotos und Einstellungen bleiben auf deinem Gerät. Wenn du zum Druck hochlädst, gelten die Regeln des Anbieters.</p>
+                <p data-i18n="terms.p5">Die Kamera ist nötig. Der Standort ist freiwillig.</p>
+                <p data-i18n-html="terms.p6">Fragen: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a></p>
               </div>
             </section>
 
@@ -207,14 +238,14 @@
               <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-neutral-900 inline-block border border-black"></span>
-                  03 // Datenschutz
+                  04 // <span data-i18n="nav.privacy">Datenschutz</span>
                 </h3>
               </div>
               <div class="border border-black p-5 bg-neutral-50 max-w-3xl markdown">
-                <h2>Datenschutzerklärung</h2>
-                <p><strong>Stand:</strong> 1. August 2026</p>
+                <h2 data-i18n="privacy.heading">Datenschutzerklärung</h2>
+                <p><strong data-i18n="privacy.asOf">Stand: 1. August 2026</strong></p>
 
-                <h3>Verantwortlicher</h3>
+                <h3 data-i18n="privacy.controller">Verantwortlicher</h3>
                 <p>
                   Sebastian Rosenzweig<br />
                   Kirchenstr. 8<br />
@@ -222,26 +253,26 @@
                   E-Mail: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>
                 </p>
 
-                <h3>Kontaktaufnahme</h3>
-                <p>Wenn du mich per E-Mail kontaktierst, verarbeite ich deine Angaben (E-Mail-Adresse, Inhalt der Nachricht) nur zur Bearbeitung deiner Anfrage.</p>
+                <h3 data-i18n="privacy.contact">Kontaktaufnahme</h3>
+                <p data-i18n="privacy.contactBody">Wenn du mich per E-Mail kontaktierst, verarbeite ich deine Angaben (E-Mail-Adresse, Inhalt der Nachricht) nur zur Bearbeitung deiner Anfrage.</p>
 
-                <h3>App</h3>
-                <p>Knïps speichert Fotos und Einstellungen nur lokal auf deinem Gerät. Es gibt kein Backend, keine Konten, keine Analytics. An mich werden keine personenbezogenen Daten aus der App übermittelt.</p>
-                <p>Die App kann Kamera, Mediathek und optional Standort anfragen — jeweils nur für die jeweilige Funktion (Fotos aufnehmen/speichern bzw. optional GPS ins Bild).</p>
-                <p>Optionaler Druck-Upload erfolgt zum Druckanbieter des gewählten Landes: dm-Foto in Deutschland (foto.dm.de) oder Coop Fotoservice in der Schweiz (photo.coop.ch). Die Datei geht direkt an den gewählten Anbieter, nicht an mich. Knïps ist weder mit dm noch mit Coop verbunden und hat keine kommerzielle Beziehung zu ihnen. Es gelten deren Datenschutzbestimmungen: <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">dm-Foto</a> und <a href="https://photo.coop.ch/datenschutz.html" target="_blank" rel="noreferrer">Coop Fotoservice</a>.</p>
+                <h3 data-i18n="privacy.app">App</h3>
+                <p data-i18n="privacy.appBody1">Knïps speichert Fotos und Einstellungen nur lokal auf deinem Gerät. Es gibt kein Backend, keine Konten, keine Analytics. An mich werden keine personenbezogenen Daten aus der App übermittelt.</p>
+                <p data-i18n="privacy.appBody2">Die App kann Kamera, Mediathek und optional Standort anfragen — jeweils nur für die jeweilige Funktion (Fotos aufnehmen/speichern bzw. optional GPS ins Bild).</p>
+                <p data-i18n-html="privacy.appBody3">Optionaler Druck-Upload erfolgt zum Druckanbieter des gewählten Landes: dm-Foto in Deutschland (foto.dm.de) oder Coop Fotoservice in der Schweiz (photo.coop.ch). Die Datei geht direkt an den gewählten Anbieter, nicht an mich. Knïps ist weder mit dm noch mit Coop verbunden und hat keine kommerzielle Beziehung zu ihnen. Es gelten deren Datenschutzbestimmungen: <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">dm-Foto</a> und <a href="https://photo.coop.ch/datenschutz.html" target="_blank" rel="noreferrer">Coop Fotoservice</a>.</p>
 
-                <h3>App-Store</h3>
-                <p>Der Download der App erfolgt über den Apple App Store oder den Google Play Store. Dabei verarbeiten Apple bzw. Google eigene Daten (z. B. Kontodaten, Zahlungsdaten, Geräteinformationen), auf die ich keinen Einfluss habe. Es gelten die Datenschutzbestimmungen des jeweiligen Anbieters:</p>
+                <h3 data-i18n="privacy.appStore">App-Store</h3>
+                <p data-i18n="privacy.appStoreBody">Der Download der App erfolgt über den Apple App Store oder den Google Play Store. Dabei verarbeiten Apple bzw. Google eigene Daten (z. B. Kontodaten, Zahlungsdaten, Geräteinformationen), auf die ich keinen Einfluss habe. Es gelten die Datenschutzbestimmungen des jeweiligen Anbieters:</p>
                 <ul>
-                  <li>Apple: <a href="https://www.apple.com/legal/privacy/de-ww/" target="_blank" rel="noreferrer">https://www.apple.com/legal/privacy/de-ww/</a></li>
-                  <li>Google: <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noreferrer">https://policies.google.com/privacy?hl=de</a></li>
+                  <li><span data-i18n="privacy.apple">Apple</span>: <a href="https://www.apple.com/legal/privacy/de-ww/" target="_blank" rel="noreferrer" data-i18n-href="privacy.appleHref">https://www.apple.com/legal/privacy/de-ww/</a></li>
+                  <li><span data-i18n="privacy.google">Google</span>: <a href="https://policies.google.com/privacy?hl=de" target="_blank" rel="noreferrer" data-i18n-href="privacy.googleHref">https://policies.google.com/privacy?hl=de</a></li>
                 </ul>
 
-                <h3>Website (GitHub Pages)</h3>
-                <p>Diese Seite wird bei <strong>GitHub Pages</strong> (GitHub Inc. / Microsoft, USA) gehostet. Beim Aufruf speichert GitHub technisch bedingt Server-Logs (u. a. IP-Adresse). Diese Logs werden nach Angaben von GitHub für einen begrenzten Zeitraum gespeichert und dienen ausschließlich der technischen Bereitstellung sowie Sicherheit der Seite. Details: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noreferrer">GitHub Privacy Statement</a>.</p>
+                <h3 data-i18n="privacy.website">Website (GitHub Pages)</h3>
+                <p data-i18n-html="privacy.websiteBody">Diese Seite wird bei <strong>GitHub Pages</strong> (GitHub Inc. / Microsoft, USA) gehostet. Beim Aufruf speichert GitHub technisch bedingt Server-Logs (u. a. IP-Adresse). Diese Logs werden nach Angaben von GitHub für einen begrenzten Zeitraum gespeichert und dienen ausschließlich der technischen Bereitstellung sowie Sicherheit der Seite. Details: <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noreferrer">GitHub Privacy Statement</a>.</p>
 
-                <h3>Rechte</h3>
-                <p>Du hast die Rechte nach der DSGVO (u. a. Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit) sowie das Recht, dich bei einer Aufsichtsbehörde zu beschweren (z. B. BayLDA). Da ich keine App-Daten speichere, gibt es bei mir dazu nichts zu löschen oder auszuhändigen.</p>
+                <h3 data-i18n="privacy.rights">Rechte</h3>
+                <p data-i18n="privacy.rightsBody">Du hast die Rechte nach der DSGVO (u. a. Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit) sowie das Recht, dich bei einer Aufsichtsbehörde zu beschweren (z. B. BayLDA). Da ich keine App-Daten speichere, gibt es bei mir dazu nichts zu löschen oder auszuhändigen.</p>
               </div>
             </section>
 
@@ -249,12 +280,12 @@
               <div class="border-b-2 border-black pb-2.5">
                 <h3 class="font-sans font-black text-xl text-[#0D0E0E] tracking-tight flex items-center gap-2">
                   <span class="w-3.5 h-3.5 bg-[#F4AC24] inline-block border border-black"></span>
-                  04 // Kontakt / Impressum
+                  05 // <span data-i18n="nav.contact">Kontakt / Impressum</span>
                 </h3>
               </div>
               <div class="border border-black p-5 bg-neutral-50 max-w-3xl markdown">
-                <h2>Impressum</h2>
-                <p><strong>Angaben gemäß § 5 DDG</strong></p>
+                <h2 data-i18n="imprint.heading">Impressum</h2>
+                <p><strong data-i18n="imprint.legal">Angaben gemäß § 5 DDG</strong></p>
                 <p>
                   Sebastian Rosenzweig<br />
                   Kirchenstr. 8<br />
@@ -262,11 +293,11 @@
                   Deutschland
                 </p>
 
-                <h3>Kontakt</h3>
+                <h3 data-i18n="imprint.contact">Kontakt</h3>
                 <p>E-Mail: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a></p>
 
-                <h3>Verantwortlich für den Inhalt</h3>
-                <p>Sebastian Rosenzweig, Anschrift wie oben</p>
+                <h3 data-i18n="imprint.responsible">Verantwortlich für den Inhalt</h3>
+                <p data-i18n="imprint.responsibleBody">Sebastian Rosenzweig, Anschrift wie oben</p>
 
                 </div>
             </section>
@@ -275,7 +306,7 @@
 
           <div class="flex flex-col sm:flex-row justify-between items-center border-t-2 border-black pt-6 mt-16 text-neutral-500 text-[10px] font-mono leading-relaxed gap-4 w-full">
             <div class="flex items-center gap-1">
-              <span class="font-bold text-[#0D0E0E]">Entwickelt mit ❤️ in Erlangen.</span>
+              <span class="font-bold text-[#0D0E0E]" data-i18n="footer.made">Entwickelt mit ❤️ in Erlangen.</span>
             </div>
             <div class="flex gap-4 font-bold uppercase tracking-wider text-neutral-400">
               <span>© 2026 knïps</span>
@@ -285,6 +316,7 @@
 
       </div>
     </div>
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

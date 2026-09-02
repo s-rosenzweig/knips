@@ -1,5 +1,5 @@
 (function () {
-  const sections = ['allgemein', 'beispiele', 'datenschutz', 'kontakt'];
+  const sections = ['allgemein', 'beispiele', 'nutzung', 'datenschutz', 'kontakt'];
   const container = document.getElementById('main-scroll-container');
   const navButtons = document.querySelectorAll('.nav-btn');
   const brandHeader = document.getElementById('brand-header-trigger');
@@ -19,7 +19,11 @@
     navOverlay.classList.toggle('is-open', open);
     navOverlay.hidden = !open;
     menuToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    menuToggle.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+    const t = window.knipsI18n && window.knipsI18n.t;
+    menuToggle.setAttribute(
+      'aria-label',
+      t ? t(open ? 'menu.close' : 'menu.open') : (open ? 'Menü schließen' : 'Menü öffnen')
+    );
     document.body.classList.toggle('nav-open', open);
   }
 
@@ -124,6 +128,14 @@
   window.addEventListener('popstate', () => applyHash(true));
 
   closeMenu();
+
+  if (window.knipsI18n && window.knipsI18n.onChange) {
+    window.knipsI18n.onChange(() => {
+      if (!menuToggle) return;
+      const open = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-label', window.knipsI18n.t(open ? 'menu.close' : 'menu.open'));
+    });
+  }
 
   // Wait a frame so layout is ready, then jump without animation on first paint.
   requestAnimationFrame(() => {
