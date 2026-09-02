@@ -61,7 +61,7 @@
           'Wenn du mich per E-Mail kontaktierst, verarbeite ich deine Angaben (E-Mail-Adresse, Inhalt der Nachricht) nur zur Bearbeitung deiner Anfrage.',
         app: 'App',
         appBody1:
-          'Knïps speichert Fotos und Einstellungen nur lokal auf deinem Gerät. Es gibt kein Backend, keine Konten, keine Analytics. An mich werden keine personenbezogenen Daten aus der App übermittelt.',
+          'Knïps speichert Fotos und Einstellungen nur lokal auf deinem Gerät. Es gibt kein Backend, keine Konten. An mich werden keine personenbezogenen Daten aus der App übermittelt.',
         appBody2:
           'Die App kann Kamera, Mediathek und optional Standort anfragen — jeweils nur für die jeweilige Funktion (Fotos aufnehmen/speichern bzw. optional GPS ins Bild).',
         appBody3:
@@ -83,12 +83,11 @@
       terms: {
         heading: 'Nutzungsbedingungen',
         asOf: 'Stand: 2. September 2026',
-        p1: 'Knïps ist eine Kamera-App. Wenn du sie nutzt, akzeptierst du diese Bedingungen.',
+        p1: 'Knïps ist eine Kamera-App. Mit der Nutzung der App akzeptierst du diese Bedingungen.',
         p2: 'Du nutzt Knïps auf eigene Gefahr. Ich übernehme keine Verantwortung für verlorene Fotos, kaputte Dateien, Probleme mit Drittanbieter-Diensten oder wenn die App einen schlechten Tag hat.',
         p3: 'Beim Druck-Upload kann die Datei an dm-Foto oder Coop Fotoservice gehen, je nach Land — nicht an mich. Es gibt keine Zusammenarbeit und keine kommerzielle Beziehung mit ihnen.',
         p4: 'Fotos und Einstellungen bleiben auf deinem Gerät. Wenn du zum Druck hochlädst, gelten die Regeln des Anbieters.',
-        p5: 'Die Kamera ist nötig. Der Standort ist freiwillig.',
-        p6: 'Fragen: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>',
+        p5: 'Fragen: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>',
       },
       imprint: {
         heading: 'Impressum',
@@ -148,7 +147,7 @@
           'If you email me, I only use your details (email address, message) to handle your request.',
         app: 'App',
         appBody1:
-          'Knïps stores photos and settings only locally on your device. There is no backend, no accounts, no analytics. No personal data from the app is sent to me.',
+          'Knïps stores photos and settings only locally on your device. There is no backend, no accounts. No personal data from the app is sent to me.',
         appBody2:
           'The app may request camera, photo library, and optionally location — each only for that feature (taking/saving photos, or optionally GPS on the image).',
         appBody3:
@@ -174,8 +173,7 @@
         p2: 'You use Knïps at your own risk. I don’t take responsibility for lost photos, broken files, problems with third-party services, or the app having a bad day.',
         p3: 'If you upload for print, the file may go to dm-Foto or Coop Fotoservice, depending on country — not to me. There is no collaboration and no commercial relationship with them.',
         p4: 'Photos and settings stay on your device. If you upload for print, that provider’s rules apply.',
-        p5: 'The camera is required. Location is optional.',
-        p6: 'Questions: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>',
+        p5: 'Questions: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>',
       },
       imprint: {
         heading: 'Imprint',
@@ -235,7 +233,7 @@
           'Wänn du mich per E-Mail kontaktierst, verarbeit i dini Aagabe (E-Mail-Adrässe, Inhalt vo de Nachricht) nur zum dini Aafrog bearbeite.',
         app: 'App',
         appBody1:
-          'Knïps spycheret Fotos und Iistellige nur lokal uf dim Grät. Es git keis Backend, kei Konte, kei Analytics. A mich wärded kei persönlichi Date us de App übermittlet.',
+          'Knïps spycheret Fotos und Iistellige nur lokal uf dim Grät. Es git keis Backend, kei Konte. A mich wärded kei persönlichi Date us de App übermittlet.',
         appBody2:
           'D App cha Kamera, Mediathek und optional Standort aafroge — jewiils nur für die jewiilig Funkzion (Fotos ufnee/spychere bzw. optional GPS ins Bild).',
         appBody3:
@@ -261,8 +259,7 @@
         p2: 'Du bruchsch Knïps uf eigeti Gfahr. Ich übernimm kei Verantwortig für verloreni Fotos, kaputti Dateie, Problem mit Drittaabieter-Dienscht oder wänn d App en schlechte Tag hät.',
         p3: 'Bim Druck-Ufelade cha d Datei a dm-Foto oder Coop Fotoservice goh, je nach Land — nöd a mich. Es git kei Zämearbet und kei kommerzielli Bezieig mit ene.',
         p4: 'Fotos und Iistellige bliibed uf dim Grät. Wänn du zum Druck ufeladisch, gälted d Regle vom Aabieter.',
-        p5: 'D Kamera bruchts. De Standort isch freiwillig.',
-        p6: 'Frooge: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>',
+        p5: 'Frooge: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>',
       },
       imprint: {
         heading: 'Impressum',

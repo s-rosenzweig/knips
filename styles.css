@@ -203,20 +203,34 @@ a.btn-link:hover { color: inherit; }
 a.store-link:hover { color: var(--color-white); }
 
 /* ── mobile hamburger / drawer nav ── */
+.header-store,
+.lang-toggle {
+  box-sizing: border-box;
+  height: 24px;
+}
+.header-store {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 .lang-toggle {
   display: inline-flex;
   flex-shrink: 0;
-  border: 2px solid #0D0E0E;
-  background: #fff;
+  align-items: stretch;
+  border: 1px solid #0D0E0E;
+  background: #fafafa;
 }
 .lang-toggle button {
-  width: 36px;
-  height: 36px;
-  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  min-width: 24px;
+  height: 100%;
+  padding: 0 8px;
   border: 0;
-  border-right: 2px solid #0D0E0E;
-  background: #fafafa;
-  font-size: 16px;
+  border-right: 1px solid #0D0E0E;
+  background: transparent;
+  font-size: 13px;
   line-height: 1;
   cursor: pointer;
 }
@@ -233,14 +247,6 @@ a.store-link:hover { color: var(--color-white); }
 .lang-toggle button.is-active:hover,
 .lang-toggle button[aria-pressed="true"]:hover {
   background: #F4AC24;
-}
-
-@media (max-width: 380px) {
-  .lang-toggle button {
-    width: 32px;
-    height: 32px;
-    font-size: 14px;
-  }
 }
 
 .menu-toggle {
