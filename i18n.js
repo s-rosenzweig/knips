@@ -1,11 +1,6 @@
 /**
  * Website copy: en / de / gsw.
  *
- * gsw is Züritüütsch, informal — same stack as the app catalogs:
- * Supertext Zürichdeutsch for sentences
- * (https://www.supertext.com/de-DE/p/uebersetzen/deutsch-schweizerdeutsch),
- * Dieth spelling via zuerituetsch.ch, CLDR gsw_CH for month names.
- * Impressum identity block stays German in every language.
  */
 (function () {
   const STORAGE_KEY = 'knips-lang';
@@ -187,7 +182,7 @@
     gsw: {
       menu: { open: 'Menü uufmache', close: 'Menü zue' },
       lang: {
-        group: 'Sprooch',
+        group: 'Spraach',
         en: 'English',
         de: 'Deutsch',
         gsw: 'Schwiizerdütsch',
@@ -202,7 +197,7 @@
       hero: {
         headline: 'Weniger isch meh.',
         lead: 'Knïps bringt der d Nostalgi vo analoge Fotografii uf dis Smartphone: Filmrolle iileege, fotografiere, drucke. Fast wie früener.',
-        shotAlt: 'Ablauf: Filmrolle erstelle, Fotos knipse, online drucke, analog gniessse',
+        shotAlt: 'Ablauf: Filmrolle erstelle, Fotos knipse, online drucke, analog gniesse',
         featuresTitle: 'Features',
         feat1: 'Ziit- und Ortsstämpel für dini Bilder',
         feat2: 'Individuelli Hashtags uf jedem Foto',
@@ -235,9 +230,9 @@
         appBody1:
           'Knïps spycheret Fotos und Iistellige nur lokal uf dim Grät. Es git keis Backend, kei Konte. A mich wärded kei persönlichi Date us de App übermittlet.',
         appBody2:
-          'D App cha Kamera, Mediathek und optional Standort aafroge — jewiils nur für die jewiilig Funkzion (Fotos ufnee/spychere bzw. optional GPS ins Bild).',
+          'D App cha Kamera, Mediathek und optional Standort aafroge — jewiils nur für die Funkzion (Fotos ufnee/spychere bzw. optional GPS ins Bild).',
         appBody3:
-          'Optionals Druck-Ufelade goot a de Druckaabieter vom gwählte Land: dm-Foto i Tüütschland (foto.dm.de) oder Coop Fotoservice i de Schwiiz (photo.coop.ch). D Datei goot direkt a de gwählt Aabieter, nöd a mich. Knïps isch weder mit dm no mit Coop verbunde und hät kei kommerzielli Bezieig zuene. Es gälted deren Dateschutzbestimmige: <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">dm-Foto</a> und <a href="https://photo.coop.ch/datenschutz.html" target="_blank" rel="noreferrer">Coop Fotoservice</a>.',
+          'S optional Druck-Ufelade goot a de Druckaabieter vom gwählte Land: dm-Foto i Dütschland (foto.dm.de) oder Coop Fotoservice i de Schwiiz (photo.coop.ch). D Datei goot direkt a de gwählt Aabieter, nöd a mich. Knïps isch weder mit dm no mit Coop verbunde und hät kei kommerzielli Bezieig zuene. Es gälted deren Dateschutzbestimmige: <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">dm-Foto</a> und <a href="https://photo.coop.ch/datenschutz.html" target="_blank" rel="noreferrer">Coop Fotoservice</a>.',
         appStore: 'App-Store',
         appStoreBody:
           'De Download vo de App lauft über de Apple App Store oder de Google Play Store. Debii verarbeited Apple bzw. Google eigeni Date (z. B. Kontodate, Zaaligsdate, Grätinformatione), uf die ich kei Iifluss ha. Es gälted d Dateschutzbestimmige vom jewiilige Aabieter:',
@@ -256,7 +251,7 @@
         heading: 'Nutzigsbedingige',
         asOf: 'Stand: 2. Septämber 2026',
         p1: 'Knïps isch e Kamera-App. Wänn du si bruchsch, akzeptierst du die Bedingige.',
-        p2: 'Du bruchsch Knïps uf eigeti Gfahr. Ich übernimm kei Verantwortig für verloreni Fotos, kaputti Dateie, Problem mit Drittaabieter-Dienscht oder wänn d App en schlechte Tag hät.',
+        p2: 'Du bruchsch Knïps uf eigeni Gfahr. Ich übernimm kei Verantwortig für verloreni Fotos, kaputti Dateie, Problem mit Drittaabieter-Dienscht oder wänn d App en schlechte Tag hät.',
         p3: 'Bim Druck-Ufelade cha d Datei a dm-Foto oder Coop Fotoservice goh, je nach Land — nöd a mich. Es git kei Zämearbet und kei kommerzielli Bezieig mit ene.',
         p4: 'Fotos und Iistellige bliibed uf dim Grät. Wänn du zum Druck ufeladisch, gälted d Regle vom Aabieter.',
         p5: 'Frooge: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>',
