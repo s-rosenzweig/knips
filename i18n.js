@@ -60,7 +60,7 @@
         appBody2:
           'Die App kann Kamera, Mediathek und optional Standort anfragen — jeweils nur für die jeweilige Funktion (Fotos aufnehmen/speichern bzw. optional GPS ins Bild).',
         appBody3:
-          'Optionaler Druck-Upload erfolgt zum Druckanbieter des gewählten Landes: dm-Foto in Deutschland (foto.dm.de) oder Coop Fotoservice in der Schweiz (photo.coop.ch). Die Datei geht direkt an den gewählten Anbieter, nicht an mich. Knïps ist weder mit dm noch mit Coop verbunden und hat keine kommerzielle Beziehung zu ihnen. Es gelten deren Datenschutzbestimmungen: <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">dm-Foto</a> und <a href="https://photo.coop.ch/datenschutz.html" target="_blank" rel="noreferrer">Coop Fotoservice</a>.',
+          'Optionaler Druck-Upload geht an dm-Foto (DE) oder Coop Fotoservice (CH), nicht an mich. Mit dm und Coop besteht keine Partnerschaft und keine kommerzielle Zusammenarbeit. Es gelten die Datenschutzbestimmungen von <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">dm-Foto</a> und <a href="https://photo.coop.ch/datenschutz.html" target="_blank" rel="noreferrer">Coop Fotoservice</a>.',
         appStore: 'App-Store',
         appStoreBody:
           'Der Download der App erfolgt über den Apple App Store oder den Google Play Store. Dabei verarbeiten Apple bzw. Google eigene Daten (z. B. Kontodaten, Zahlungsdaten, Geräteinformationen), auf die ich keinen Einfluss habe. Es gelten die Datenschutzbestimmungen des jeweiligen Anbieters:',
@@ -80,7 +80,7 @@
         asOf: 'Stand: 2. September 2026',
         p1: 'Knïps ist eine Kamera-App. Mit der Nutzung der App akzeptierst du diese Bedingungen.',
         p2: 'Du nutzt Knïps auf eigene Gefahr. Ich übernehme keine Verantwortung für verlorene Fotos, kaputte Dateien, Probleme mit Drittanbieter-Diensten oder wenn die App einen schlechten Tag hat.',
-        p3: 'Beim Druck-Upload kann die Datei an dm-Foto oder Coop Fotoservice gehen, je nach Land — nicht an mich. Es gibt keine Zusammenarbeit und keine kommerzielle Beziehung mit ihnen.',
+        p3: 'Beim Druck-Upload kann die Datei an dm-Foto oder Coop Fotoservice gehen, je nach Land — nicht an mich. Mit dm und Coop gibt es keine Partnerschaft.',
         p4: 'Fotos und Einstellungen bleiben auf deinem Gerät. Wenn du zum Druck hochlädst, gelten die Regeln des Anbieters.',
         p5: 'Fragen: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>',
       },
@@ -146,7 +146,7 @@
         appBody2:
           'The app may request camera, photo library, and optionally location — each only for that feature (taking/saving photos, or optionally GPS on the image).',
         appBody3:
-          'Optional print upload goes to the print provider of the chosen country: dm-Foto in Germany (foto.dm.de) or Coop Fotoservice in Switzerland (photo.coop.ch). The file goes directly to the chosen provider, not to me. Knïps is not affiliated with dm or Coop and has no commercial relationship with them. Their privacy policies apply: <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">dm-Foto</a> and <a href="https://photo.coop.ch/datenschutz.html" target="_blank" rel="noreferrer">Coop Fotoservice</a>.',
+          'Optional print upload goes to dm-Foto (DE) or Coop Fotoservice (CH), not to me. There is no partnership with dm or Coop. The privacy policies of <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">dm-Foto</a> and <a href="https://photo.coop.ch/datenschutz.html" target="_blank" rel="noreferrer">Coop Fotoservice</a> apply.',
         appStore: 'App Store',
         appStoreBody:
           'The app is downloaded through the Apple App Store or Google Play Store. Apple or Google process their own data (e.g. account data, payment data, device information), which I have no control over. The privacy policy of the respective provider applies:',
@@ -166,7 +166,7 @@
         asOf: 'As of: 2 September 2026',
         p1: 'Knïps is a camera app. By using it you accept these terms.',
         p2: 'You use Knïps at your own risk. I don’t take responsibility for lost photos, broken files, problems with third-party services, or the app having a bad day.',
-        p3: 'If you upload for print, the file may go to dm-Foto or Coop Fotoservice, depending on country — not to me. There is no collaboration and no commercial relationship with them.',
+        p3: 'If you upload for print, the file may go to dm-Foto or Coop Fotoservice, depending on country — not to me. No partnership with dm or Coop.',
         p4: 'Photos and settings stay on your device. If you upload for print, that provider’s rules apply.',
         p5: 'Questions: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>',
       },
@@ -232,7 +232,7 @@
         appBody2:
           'D App cha Kamera, Mediathek und optional Standort aafroge — jewiils nur für die Funkzion (Fotos ufnee/spychere bzw. optional GPS ins Bild).',
         appBody3:
-          'S optional Druck-Ufelade goot a de Druckaabieter vom gwählte Land: dm-Foto i Dütschland (foto.dm.de) oder Coop Fotoservice i de Schwiiz (photo.coop.ch). D Datei goot direkt a de gwählt Aabieter, nöd a mich. Knïps isch weder mit dm no mit Coop verbunde und hät kei kommerzielli Bezieig zuene. Es gälted deren Dateschutzbestimmige: <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">dm-Foto</a> und <a href="https://photo.coop.ch/datenschutz.html" target="_blank" rel="noreferrer">Coop Fotoservice</a>.',
+          'S optional Druck-Ufelade goot a dm-Foto (DE) oder Coop Fotoservice (CH), nöd a mich. Mit dm und Coop git s kei Partnerschaft. Es gälted d Dateschutzbestimmige vo <a href="https://www.foto.dm.de/datenschutz" target="_blank" rel="noreferrer">dm-Foto</a> und <a href="https://photo.coop.ch/datenschutz.html" target="_blank" rel="noreferrer">Coop Fotoservice</a>.',
         appStore: 'App-Store',
         appStoreBody:
           'De Download vo de App lauft über de Apple App Store oder de Google Play Store. Debii verarbeited Apple bzw. Google eigeni Date (z. B. Kontodate, Zaaligsdate, Grätinformatione), uf die ich kei Iifluss ha. Es gälted d Dateschutzbestimmige vom jewiilige Aabieter:',
@@ -252,7 +252,7 @@
         asOf: 'Stand: 2. Septämber 2026',
         p1: 'Knïps isch e Kamera-App. Wänn du si bruchsch, akzeptierst du die Bedingige.',
         p2: 'Du bruchsch Knïps uf eigeni Gfahr. Ich übernimm kei Verantwortig für verloreni Fotos, kaputti Dateie, Problem mit Drittaabieter-Dienscht oder wänn d App en schlechte Tag hät.',
-        p3: 'Bim Druck-Ufelade cha d Datei a dm-Foto oder Coop Fotoservice goh, je nach Land — nöd a mich. Es git kei Zämearbet und kei kommerzielli Bezieig mit ene.',
+        p3: 'Bim Druck-Ufelade cha d Datei a dm-Foto oder Coop Fotoservice goh, je nach Land — nöd a mich. Mit dm und Coop git s kei Partnerschaft.',
         p4: 'Fotos und Iistellige bliibed uf dim Grät. Wänn du zum Druck ufeladisch, gälted d Regle vom Aabieter.',
         p5: 'Frooge: <a href="mailto:knips.app@outlook.com">knips.app@outlook.com</a>',
       },
